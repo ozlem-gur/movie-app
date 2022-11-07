@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import MovieSearchView from "../views/MovieSearchView.vue";
 
 const routes = [
   {
@@ -10,6 +11,7 @@ const routes = [
   {
     path: "/movie-search",
     name: "movieSearch",
+    component: MovieSearchView,
   },
 ];
 

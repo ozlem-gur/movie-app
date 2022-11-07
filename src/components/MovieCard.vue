@@ -1,16 +1,16 @@
 <template>
   <div
     :style="{
-      backgroundImage: 'url(' + movie.image + ')',
+      backgroundImage: 'url(' + movie.Poster + ')',
     }"
     class="movie-card"
   >
     <div class="movie-card-content">
-      <div class="movie-card-content-year">{{ movie.year }}</div>
+      <div class="movie-card-content-year">{{ movie.Year }}</div>
       <div class="movie-card-content-title">
-        {{ movie.title }}
+        {{ movie.Title }}
       </div>
-      <div class="movie-card-content-point">
+      <div v-if="movie.imdbpoint" class="movie-card-content-point">
         <div class="movie-card-content-point-imdb">
           <img src="../assets/logo.svg" alt="imdbpoint logo" />
           {{ movie.imdbpoint }}
@@ -21,8 +21,8 @@
         </div>
       </div>
 
-      <div class="movie-card-content-type">
-        {{ movie.type }}
+      <div v-if="movie.Genre" class="movie-card-content-type">
+        {{ movie.Genre }}
       </div>
     </div>
   </div>
@@ -55,7 +55,7 @@ export default {
     background-color: rgba(black, 0.5);
     backdrop-filter: blur(5px);
     width: 165px;
-    height: 22%;
+
     padding: 8px;
 
     &-year {

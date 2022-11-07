@@ -2,7 +2,9 @@
   <header class="header">
     <Container class="header-container">
       <div class="header-container-logo">
-        <img src="../assets/logo.svg" alt="Imdb logo" />
+        <router-link to="/">
+          <img src="../assets/logo.svg" alt="Imdb logo" />
+        </router-link>
       </div>
       <div class="header-container-search">
         <input
@@ -29,11 +31,15 @@ export default {
     const router = useRouter();
 
     const searchMovie = () => {
-      console.log(movieSearchKeyword.value);
-      //
+      router.push({
+        path: "movie-search",
+        query: {
+          keyword: movieSearchKeyword.value,
+        },
+      });
     };
 
-    return { movieSearchKeyword, searchMovie, queryParams };
+    return { movieSearchKeyword, searchMovie };
   },
 };
 </script>

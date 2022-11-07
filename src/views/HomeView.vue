@@ -21,7 +21,7 @@
       </div>
     </section>
     <section class="home-movie">
-      <MovieCard v-for="movie in movies" :key="movie.id" :movie="movie" />
+      <MovieCard v-for="movie in movies" :key="movie.imdbID" :movie="movie" />
     </section>
   </div>
 </template>
@@ -39,7 +39,7 @@ export default {
     const movies = ref([]);
 
     const dataLoad = async () => {
-      await fetch("http://localhost:3000/movies")
+      await fetch("http://localhost:3000/movies") // default GET
         .then((res) => res.json())
         .then((data) => (movies.value = data));
     };
