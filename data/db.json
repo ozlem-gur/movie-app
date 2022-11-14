@@ -5,7 +5,7 @@
       "Poster": "https://upload.wikimedia.org/wikipedia/tr/thumb/e/e6/Esaretin-bedeli.jpg/440px-Esaretin-bedeli.jpg",
       "Title": "The Shawshank Redemption",
       "Year": 1994,
-      "imdbpoint": "9.3/10",
+      "imdbRating": "9.3/10",
       "Genre": "Drama",
       "tomatopoint": "96%"
     },
@@ -14,7 +14,7 @@
       "Poster": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
       "Title": "The Godfather",
       "Year": 1972,
-      "imdbpoint": "9.2/10",
+      "imdbRating": "9.2/10",
       "Genre": "Crime/Drama",
       "tomatopoint": "94%"
     },
@@ -23,7 +23,7 @@
       "Poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg",
       "Title": "The Dark Knight",
       "Year": 2008,
-      "imdbpoint": "9.0/10",
+      "imdbRating": "9.0/10",
       "Genre": "Action/Crime/Drama",
       "tomatopoint": "90%"
     },
@@ -32,7 +32,7 @@
       "Poster": "https://i.imgur.com/ZNSWaPWl.jpg",
       "Title": "Whiplash",
       "Year": 2014,
-      "imdbpoint": "8.5/10",
+      "imdbRating": "8.5/10",
       "Genre": "Drama/Music",
       "tomatopoint": "85%"
     },
@@ -41,7 +41,7 @@
       "Poster": "https://m.media-amazon.com/images/M/MV5BODY0MDM1MDE2OV5BMl5BanBnXkFtZTcwMzEyMjkyNw@@._V1_.jpg",
       "Title": "Intouchables",
       "Year": 2011,
-      "imdbpoint": "8.5/10",
+      "imdbRating": "8.5/10",
       "Genre": "Biography/Comedy/Drama",
       "tomatopoint": "82%"
     },
@@ -50,7 +50,7 @@
       "Poster": "https://m.media-amazon.com/images/M/MV5BZWYzOGEwNTgtNWU3NS00ZTQ0LWJkODUtMmVhMjIwMjA1ZmQwXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_.jpg",
       "Title": "Top Gun: Maverick",
       "Year": 2022,
-      "imdbpoint": "8.4/10",
+      "imdbRating": "8.4/10",
       "Genre": "Action/Drama",
       "tomatopoint": "75%"
     }

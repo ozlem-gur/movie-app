@@ -1,5 +1,6 @@
 <template>
   <div
+    @click="searchForm"
     :style="{
       backgroundImage: 'url(' + movie.Poster + ')',
     }"
@@ -10,10 +11,10 @@
       <div class="movie-card-content-title">
         {{ movie.Title }}
       </div>
-      <div v-if="movie.imdbpoint" class="movie-card-content-point">
+      <div v-if="movie.imdbRating" class="movie-card-content-point">
         <div class="movie-card-content-point-imdb">
           <img src="../assets/logo.svg" alt="imdbpoint logo" />
-          {{ movie.imdbpoint }}
+          {{ movie.imdbimdbRating }}
         </div>
         <div class="movie-card-content-point-tomato">
           <img src="../assets/tomato-icon.svg" alt="tomato icon" />
@@ -29,10 +30,23 @@
 </template>
 
 <script>
+import { useRouter } from "vue-router";
 export default {
   name: "MovieCardComponent",
   props: ["movie"],
-  setup(props) {},
+  setup(props) {
+    const router = useRouter();
+
+    const searchForm = () => {
+      router.push({
+        name: "movieForm",
+        params: { imdbID: props.movie.imdbID },
+      });
+    };
+    return { searchForm };
+
+    // localhost:8080/movie-form#abc
+  },
 };
 </script>
 
