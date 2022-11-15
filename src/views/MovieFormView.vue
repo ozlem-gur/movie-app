@@ -5,18 +5,23 @@
       <input v-model="movieForm.Year" type="text" readonly />
       <input v-model="movieForm.Poster" type="text" readonly />
       <input v-model="movieForm.imdbRating" type="text" readonly />
+      <input v-model="movieForm.Genre" type="text" readonly />
     </div>
     <label class="movie-form-tomato-point">
       <p class="movie-form-tomato-point-text">Tomato Puanı:</p>
-      <input type="number" placeholder="0-100 arasında bir sayı giriniz." />
+      <input
+        v-model="movieForm.tomatoPoint"
+        type="number"
+        placeholder="0-100 arasında bir sayı giriniz."
+      />
     </label>
-    <button class="movie-form-save">KAYDET</button>
+    <button @click="saveMovie" class="movie-form-save">KAYDET</button>
   </section>
 </template>
 
 <script>
 import { computed, reactive } from "@vue/runtime-core";
-import { useRoute } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 export default {
   name: "MovieFormView",
   setup() {
@@ -25,8 +30,12 @@ export default {
       Poster: "",
       Year: "",
       imdbRating: "",
+      tomatoPoint: "",
+      Genre: "",
     });
+
     const route = useRoute();
+    const router = useRouter();
     const imdbID = computed(() => {
       return route.params.imdbID;
     });
@@ -40,13 +49,46 @@ export default {
           movieForm.Year = data.Year;
           movieForm.Poster = data.Poster;
           movieForm.imdbRating = data.imdbRating;
+          movieForm.Genre = data.Genre;
         });
     };
     formData();
 
+    const saveMovie = function () {
+      const tomatoPointNumber = Number(movieForm.tomatoPoint);
+
+      if (0 <= tomatoPointNumber && tomatoPointNumber <= 100) {
+        movieFormJsonData();
+
+        router.push({
+          path: "/",
+        });
+      } else {
+        alert("Lütfen 0-100 arasında bir değer giriniz!");
+      }
+    };
+
+    const movieFormJsonData = function () {
+      const movieFormData = {
+        Title: movieForm.Title,
+        Poster: movieForm.Poster,
+        Year: movieForm.Year,
+        imdbRating: movieForm.imdbRating,
+        tomatoPoint: `${movieForm.tomatoPoint}%`,
+        ImdbID: imdbID.value,
+        Genre: movieForm.Genre,
+      };
+
+      fetch(`http://localhost:3000/movies`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(movieFormData),
+      });
+    };
+
     //https://www.omdbapi.com/?apikey=e546c797&i=tt0372784
 
-    return { imdbID, movieForm };
+    return { imdbID, movieForm, saveMovie, movieFormJsonData };
   },
 };
 </script>

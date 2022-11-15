@@ -7,7 +7,7 @@
       "Year": 1994,
       "imdbRating": "9.3/10",
       "Genre": "Drama",
-      "tomatopoint": "96%"
+      "tomatoPoint": "96%"
     },
     {
       "ImdbID": 2,
@@ -16,7 +16,7 @@
       "Year": 1972,
       "imdbRating": "9.2/10",
       "Genre": "Crime/Drama",
-      "tomatopoint": "94%"
+      "tomatoPoint": "94%"
     },
     {
       "ImdbID": 3,
@@ -25,7 +25,7 @@
       "Year": 2008,
       "imdbRating": "9.0/10",
       "Genre": "Action/Crime/Drama",
-      "tomatopoint": "90%"
+      "tomatoPoint": "90%"
     },
     {
       "ImdbID": 4,
@@ -34,7 +34,7 @@
       "Year": 2014,
       "imdbRating": "8.5/10",
       "Genre": "Drama/Music",
-      "tomatopoint": "85%"
+      "tomatoPoint": "85%"
     },
     {
       "ImdbID": 5,
@@ -43,7 +43,7 @@
       "Year": 2011,
       "imdbRating": "8.5/10",
       "Genre": "Biography/Comedy/Drama",
-      "tomatopoint": "82%"
+      "tomatoPoint": "82%"
     },
     {
       "ImdbID": 6,
@@ -52,7 +52,37 @@
       "Year": 2022,
       "imdbRating": "8.4/10",
       "Genre": "Action/Drama",
-      "tomatopoint": "75%"
+      "tomatoPoint": "75%"
+    },
+    {
+      "Title": "Batman v Superman: Dawn of Justice",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BYThjYzcyYzItNTVjNy00NDk0LTgwMWQtYjMwNmNlNWJhMzMyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+      "Year": "2016",
+      "imdbRating": "6.4",
+      "tomatoPoint": "60%",
+      "ImdbID": "tt2975590",
+      "Genre": "Action, Adventure, Sci-Fi",
+      "id": "tt2975590"
+    },
+    {
+      "Title": "Batman Begins",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BOTY4YjI2N2MtYmFlMC00ZjcyLTg3YjEtMDQyM2ZjYzQ5YWFkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+      "Year": "2005",
+      "imdbRating": "8.2",
+      "tomatoPoint": "70%",
+      "ImdbID": "tt0372784",
+      "Genre": "Action, Crime, Drama",
+      "id": "UvE_Cr_"
+    },
+    {
+      "Title": "Batman v Superman: Dawn of Justice - Ultimate Edition",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BN2I4OTllM2MtMWVhNC00MjkzLWJlMDUtN2FhMGQ2ZGVjMjllXkEyXkFqcGdeQXVyMTEyNzgwMDUw._V1_SX300.jpg",
+      "Year": "2016",
+      "imdbRating": "7.1",
+      "tomatoPoint": "92%",
+      "ImdbID": "tt18689424",
+      "Genre": "Action, Adventure, Sci-Fi",
+      "id": "Grpy8_O"
     }
   ]
 }

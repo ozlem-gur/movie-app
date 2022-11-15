@@ -14,11 +14,11 @@
       <div v-if="movie.imdbRating" class="movie-card-content-point">
         <div class="movie-card-content-point-imdb">
           <img src="../assets/logo.svg" alt="imdbpoint logo" />
-          {{ movie.imdbimdbRating }}
+          {{ movie.imdbRating }}
         </div>
         <div class="movie-card-content-point-tomato">
           <img src="../assets/tomato-icon.svg" alt="tomato icon" />
-          {{ movie.tomatopoint }}
+          {{ movie.tomatoPoint }}
         </div>
       </div>
 
