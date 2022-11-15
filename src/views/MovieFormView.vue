@@ -11,7 +11,7 @@
       <p class="movie-form-tomato-point-text">Tomato Puanı:</p>
       <input
         v-model="movieForm.tomatoPoint"
-        type="number"
+        type="text"
         placeholder="0-100 arasında bir sayı giriniz."
       />
     </label>
